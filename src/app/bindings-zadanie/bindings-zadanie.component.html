@@ -1,0 +1,7 @@
+<input [(ngModel)]="input" [maxLength]="maxLen"/>
+
+<img [src]="src" title='Grumpy cat' style="width: 10%; height: 10%;"/>
+
+<button [disabled]="maxLen != 7" (click)="refresh($event)">Refresh</button>
+
+<p [ngClass]="maxLen == 7 ? 'ninja' : 'big'">{{dodadkowyText}}</p>

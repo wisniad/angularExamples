@@ -1,0 +1,11 @@
+<div>
+    <input (focus)="onFocus()" (blur)="onBlur()">
+</div>
+<br>
+<div>
+    <input [disabled]="isDisabled" (mousemove)="onMouseMove($event)">
+</div>
+<br>
+<div>
+    <input [disabled]="isDisabled" (paste)="onPaste()">
+</div>

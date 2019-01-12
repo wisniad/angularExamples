@@ -1,0 +1,7 @@
+<input [value]="oneWayBinding"/>
+{{oneWayBinding}}
+<input [(ngModel)] = "twoWayBinding" />
+{{twoWayBinding}}
+
+
+<button (click)="refresh($event)">Refresh</button>

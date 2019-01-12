@@ -1,0 +1,15 @@
+<ol  [hidden] = 'show'>
+    <li  *ngFor="let item of movies; let i = index">
+        {{ i + 1 }}.
+        {{item.title}} {{item.year}}
+    </li>
+</ol>
+
+<button (click)='hide()' >{{show}}</button>
+<ul [ngClass]="show ? 'css-class-1' : 'ninja'">
+    <li *ngFor="let item of movies; let i = index">
+        {{ i + 1 }}.
+        {{item.title}} {{item.year}}
+    </li>
+</ul>
+
