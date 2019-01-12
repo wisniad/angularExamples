@@ -1,3 +1,5 @@
+import { MoviesService } from './movies/movies.service';
+import { LogiService } from './logi.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -13,6 +15,9 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { PropertyInputComponent } from './property-input/property-input.component';
 import { StyleClassComponent } from './style-class/style-class.component';
 import { MenuComponent } from './menu/menu.component';
+import { MoviesComponent } from './movies/movies.component';
+import { Movies2Component } from './movies2/movies2.component';
+import { MoviesServiceComponent } from './movies-service/movies-service.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +31,19 @@ import { MenuComponent } from './menu/menu.component';
     PropertyInputComponent,
     StyleClassComponent,
     MenuComponent,
+    MoviesComponent,
+    Movies2Component,
+    MoviesServiceComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [
+    LogiService,
+    MoviesService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
